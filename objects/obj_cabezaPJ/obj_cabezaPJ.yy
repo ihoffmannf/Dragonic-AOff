@@ -1,0 +1,43 @@
+{
+  "spriteId": {
+    "name": "spr_crearPJ_4",
+    "path": "sprites/spr_crearPJ_4/spr_crearPJ_4.yy",
+  },
+  "solid": false,
+  "visible": true,
+  "spriteMaskId": null,
+  "persistent": true,
+  "parentObjectId": {
+    "name": "obj_boton_crearPJ_basic",
+    "path": "objects/obj_boton_crearPJ_basic/obj_boton_crearPJ_basic.yy",
+  },
+  "physicsObject": false,
+  "physicsSensor": false,
+  "physicsShape": 0,
+  "physicsGroup": 0,
+  "physicsDensity": 0.5,
+  "physicsRestitution": 0.1,
+  "physicsLinearDamping": 0.1,
+  "physicsAngularDamping": 0.1,
+  "physicsFriction": 0.2,
+  "physicsStartAwake": true,
+  "physicsKinematic": false,
+  "physicsShapePoints": [
+    {"x":96.0,"y":12.0,},
+    {"x":96.0,"y":96.0,},
+  ],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_cabezaPJ","path":"objects/obj_cabezaPJ/obj_cabezaPJ.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"parent":{"name":"obj_cabezaPJ","path":"objects/obj_cabezaPJ/obj_cabezaPJ.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
+  "properties": [],
+  "overriddenProperties": [],
+  "parent": {
+    "name": "Cabeza",
+    "path": "folders/Objects/Interfaz/Crear PJ/Cabeza.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "obj_cabezaPJ",
+  "tags": [],
+  "resourceType": "GMObject",
+}

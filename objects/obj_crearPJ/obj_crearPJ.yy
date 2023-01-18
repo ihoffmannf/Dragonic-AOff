@@ -1,0 +1,42 @@
+{
+  "spriteId": {
+    "name": "spr_crearPJ_6",
+    "path": "sprites/spr_crearPJ_6/spr_crearPJ_6.yy",
+  },
+  "solid": false,
+  "visible": false,
+  "spriteMaskId": null,
+  "persistent": true,
+  "parentObjectId": {
+    "name": "obj_boton_crearPJ_basic",
+    "path": "objects/obj_boton_crearPJ_basic/obj_boton_crearPJ_basic.yy",
+  },
+  "physicsObject": false,
+  "physicsSensor": false,
+  "physicsShape": 0,
+  "physicsGroup": 0,
+  "physicsDensity": 0.5,
+  "physicsRestitution": 0.1,
+  "physicsLinearDamping": 0.1,
+  "physicsAngularDamping": 0.1,
+  "physicsFriction": 0.2,
+  "physicsStartAwake": true,
+  "physicsKinematic": false,
+  "physicsShapePoints": [
+    {"x":52.0,"y":16.0,},
+    {"x":52.0,"y":52.0,},
+  ],
+  "eventList": [
+    {"isDnD":false,"eventNum":4,"eventType":6,"collisionObjectId":null,"parent":{"name":"obj_crearPJ","path":"objects/obj_crearPJ/obj_crearPJ.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
+  "properties": [],
+  "overriddenProperties": [],
+  "parent": {
+    "name": "Crear PJ",
+    "path": "folders/Objects/Interfaz/Crear PJ.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "obj_crearPJ",
+  "tags": [],
+  "resourceType": "GMObject",
+}

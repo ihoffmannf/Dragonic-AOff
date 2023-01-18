@@ -1,0 +1,43 @@
+{
+  "spriteId": {
+    "name": "spr_crearPJ_5",
+    "path": "sprites/spr_crearPJ_5/spr_crearPJ_5.yy",
+  },
+  "solid": false,
+  "visible": false,
+  "spriteMaskId": null,
+  "persistent": true,
+  "parentObjectId": {
+    "name": "obj_boton_crearPJ_basic",
+    "path": "objects/obj_boton_crearPJ_basic/obj_boton_crearPJ_basic.yy",
+  },
+  "physicsObject": false,
+  "physicsSensor": false,
+  "physicsShape": 0,
+  "physicsGroup": 0,
+  "physicsDensity": 0.5,
+  "physicsRestitution": 0.1,
+  "physicsLinearDamping": 0.1,
+  "physicsAngularDamping": 0.1,
+  "physicsFriction": 0.2,
+  "physicsStartAwake": true,
+  "physicsKinematic": false,
+  "physicsShapePoints": [
+    {"x":9.0,"y":5.0,},
+    {"x":9.0,"y":9.0,},
+  ],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_flecha_skills_izq","path":"objects/obj_flecha_skills_izq/obj_flecha_skills_izq.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":4,"eventType":6,"collisionObjectId":null,"parent":{"name":"obj_flecha_skills_izq","path":"objects/obj_flecha_skills_izq/obj_flecha_skills_izq.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
+  "properties": [],
+  "overriddenProperties": [],
+  "parent": {
+    "name": "Skills",
+    "path": "folders/Objects/Interfaz/Crear PJ/Skills.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "obj_flecha_skills_izq",
+  "tags": [],
+  "resourceType": "GMObject",
+}

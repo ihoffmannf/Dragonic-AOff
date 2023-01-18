@@ -1,0 +1,4 @@
+/// @description  Ataque
+
+puedeAtacar = true;
+

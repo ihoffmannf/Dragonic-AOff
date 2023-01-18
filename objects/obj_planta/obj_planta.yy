@@ -1,0 +1,43 @@
+{
+  "spriteId": {
+    "name": "spr_planta",
+    "path": "sprites/spr_planta/spr_planta.yy",
+  },
+  "solid": false,
+  "visible": true,
+  "spriteMaskId": null,
+  "persistent": false,
+  "parentObjectId": {
+    "name": "obj_bloque_basic",
+    "path": "objects/obj_bloque_basic/obj_bloque_basic.yy",
+  },
+  "physicsObject": false,
+  "physicsSensor": false,
+  "physicsShape": 0,
+  "physicsGroup": 0,
+  "physicsDensity": 0.5,
+  "physicsRestitution": 0.1,
+  "physicsLinearDamping": 0.1,
+  "physicsAngularDamping": 0.1,
+  "physicsFriction": 0.2,
+  "physicsStartAwake": true,
+  "physicsKinematic": false,
+  "physicsShapePoints": [
+    {"x":32.0,"y":16.0,},
+    {"x":32.0,"y":32.0,},
+  ],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_planta","path":"objects/obj_planta/obj_planta.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"obj_planta","path":"objects/obj_planta/obj_planta.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
+  "properties": [],
+  "overriddenProperties": [],
+  "parent": {
+    "name": "Varios",
+    "path": "folders/Objects/Mundo/Varios.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "obj_planta",
+  "tags": [],
+  "resourceType": "GMObject",
+}
