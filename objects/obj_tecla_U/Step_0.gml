@@ -9,7 +9,6 @@ if (
 !position_meeting(device_mouse_x(3), device_mouse_y(3), self) && 
 !position_meeting(device_mouse_x(4), device_mouse_y(4), self)
 ) {
-    keyboard_key_release(ord("U"));
     if (obj_inventario.visible) {
         image_index = 0;
     } else {
@@ -49,7 +48,7 @@ device_mouse_check_button(4, mb_left)
             if (!obj_pj.muerto || barcaORunaSeleccionada) {
                 
                 if (visible) {
-                    keyboard_key_press(ord("U"));
+					usarItem();
                     if (obj_inventario.visible) {
                         image_index = 1;
                     } else {

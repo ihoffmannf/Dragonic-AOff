@@ -15,20 +15,20 @@ if (obj_pj.nivel >= 1 && obj_pj.nivel <= 14) {
 if (!obj_tecla_f6.teclaApretada) {
     instance_destroy();
     obj_pj.meditando = false;
-    keyboard_key_release(vk_f6);
+    //keyboard_key_release(vk_f6);
 }
 
 if (obj_pj.mana == obj_pj.manaMax) {
     instance_destroy();
     obj_pj.meditando = false;
     obj_tecla_f6.teclaApretada = false;
-    keyboard_key_release(vk_f6);
+    //keyboard_key_release(vk_f6);
 }
 
 if (obj_pj.muerto) {
     instance_destroy();
     obj_pj.meditando = false;
     obj_tecla_f6.teclaApretada = false;
-    keyboard_key_release(vk_f6);
+    //keyboard_key_release(vk_f6);
 }
 

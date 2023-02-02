@@ -1,14 +1,6 @@
 /// @description  Gráfico
 
-if (
-!puedeMoverse &&
-!(keyboard_check(vk_up) && keyboard_check(vk_down)) &&
-!(keyboard_check(vk_left) && keyboard_check(vk_right)) &&
-!(keyboard_check(vk_up) && keyboard_check(vk_right)) &&
-!(keyboard_check(vk_up) && keyboard_check(vk_left)) &&
-!(keyboard_check(vk_down) && keyboard_check(vk_right)) &&
-!(keyboard_check(vk_down) && keyboard_check(vk_left))
-) {
+if (!puedeMoverse) {
 
     image_index = index[direccion, frame];
     
@@ -30,16 +22,6 @@ if (
             }
         }
         
-        /*
-        
-        if (obj_arma.frame < 3) {
-            obj_arma.frame++;
-        } else {
-            obj_arma.frame = 0;
-        }
-        
-        */
-        
     }
     
     if (escudoActual != -1) {
@@ -51,18 +33,7 @@ if (
             if (obj_escudo.frame == 5) {
                 obj_escudo.frame = 0
             }
-        }
-        
-        /*
-        
-        if (obj_escudo.frame < 3) {
-            obj_escudo.frame++;
-        } else {
-            obj_escudo.frame = 0;
-        }
-        
-        */
-        
+        }     
     }
     
 } else {
@@ -78,9 +49,4 @@ if (
     }
     
 }
-
-// alarm[0] = 3;
 alarm[0] = 4;
-
-/* */
-/*  */

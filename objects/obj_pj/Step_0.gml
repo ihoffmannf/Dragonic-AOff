@@ -5,21 +5,50 @@
     Ultima tecla:
     vk_down = 0;
     vk_up = 1;
-    vk_left = 2;
+    vk_left = 2;a
     vk_right = 3;
 
 */
-
 var bloqueo = false;
 
+upKey = keyboard_check(mapArriba) || obj_flecha_arriba.apretada
+downKey = keyboard_check(mapAbajo) || obj_flecha_abajo.apretada
+leftKey = keyboard_check(mapIzquierda) || obj_flecha_izq.apretada
+rightKey = keyboard_check(mapDerecha) || obj_flecha_der.apretada
+
+if (keyboard_check_pressed(mapAgarrar) && (!muerto)){
+	tirarItem()
+}
+
+if (keyboard_check_pressed(mapAtacar)){
+	pjAtacar();
+}
+
+if (keyboard_check_pressed(mapUsar)){
+	usarItem();
+}
+
+if (keyboard_check_pressed(mapMeditar)){
+	meditar();
+}
+
+
+// transparencia en arboles
+var _inst = noone
+if (obj_opciones.opcionArboles) _inst = instance_place(x, y, obj_arbol_basic);
+if (_inst != noone) {
+	_inst.image_alpha = 0.5;
+	_inst.alarm[0] = 1;
+}
+
 if (puedeMoverse) {
-    if (keyboard_check(vk_right)) {
+    if (rightKey) {
         direccion = 3;
-    } else if (keyboard_check(vk_left)) {
+    } else if (leftKey) {
         direccion = 2;
-    } else if (keyboard_check(vk_up)) {
+    } else if (upKey) {
         direccion = 1;
-    } else if (keyboard_check(vk_down)) {
+    } else if (downKey) {
         direccion = 0;
     }
 }
@@ -29,7 +58,7 @@ if (pasos == 0 && puedeMoverse && !inmovilizado && !meditando) {
 
     var sndPaso = -1;
 
-    if (!keyboard_check(vk_left) && !keyboard_check(vk_up) && !keyboard_check(vk_down)) {
+    if (rightKey) {
 
         // Derecha
         
@@ -46,22 +75,18 @@ if (pasos == 0 && puedeMoverse && !inmovilizado && !meditando) {
         !place_meeting(x + 32, y, obj_npc_basic) && 
         !bloqueo
         ) {
-        
-            if (keyboard_check(vk_right)) {
-                xInicio = x;
-                // frame = 0;
-                alarm[0] = 1;
-                x += spd;
-                if (!muerto) {
-                    reproducirSonido(sndPaso, false, false);
-                }
-                pasos = 1;
-                ultimaTecla = 3;
-            } 
-        
+            xInicio = x;
+            // frame = 0;
+            alarm[0] = 1;
+            x += spd;
+            if (!muerto) {
+                reproducirSonido(sndPaso, false, false);
+            }
+            pasos = 1;
+            ultimaTecla = 3;     
         }        
         
-    } else if (!keyboard_check(vk_right) && !keyboard_check(vk_up) && !keyboard_check(vk_down)) {
+    } else if (leftKey) {
     
         // Izquierda
     
@@ -78,22 +103,18 @@ if (pasos == 0 && puedeMoverse && !inmovilizado && !meditando) {
         !place_meeting(x - 32, y, obj_npc_basic) && 
         !bloqueo
         ) {
-    
-            if (keyboard_check(vk_left)) {
-                xInicio = x;
-                // frame = 0;
-                alarm[0] = 1;
-                x -= spd;
-                if (!muerto) {
-                    reproducirSonido(sndPaso, false, false);
-                }
-                pasos = 1;
-                ultimaTecla = 2;
-            } 
-            
+            xInicio = x;
+            // frame = 0;
+            alarm[0] = 1;
+            x -= spd;
+            if (!muerto) {
+                reproducirSonido(sndPaso, false, false);
+            }
+            pasos = 1;
+            ultimaTecla = 2;
         }
     
-    } else if (!keyboard_check(vk_right) && !keyboard_check(vk_left) && !keyboard_check(vk_down)) {
+    } else if (upKey) {
         
         // Arriba
         
@@ -110,22 +131,18 @@ if (pasos == 0 && puedeMoverse && !inmovilizado && !meditando) {
         !place_meeting(x, y - 32, obj_npc_basic) && 
         !bloqueo
         ) {
-        
-            if (keyboard_check(vk_up)) {
-                yInicio = y;
-                // frame = 0;
-                alarm[0] = 1;
-                y -= spd;
-                if (!muerto) {
-                    reproducirSonido(sndPaso, false, false);
-                }
-                pasos = 1;
-                ultimaTecla = 1;
-            } 
-            
+            yInicio = y;
+            // frame = 0;
+            alarm[0] = 1;
+            y -= spd;
+            if (!muerto) {
+                reproducirSonido(sndPaso, false, false);
+            }
+            pasos = 1;
+            ultimaTecla = 1;  
         }
     
-    } else if (!keyboard_check(vk_right) && !keyboard_check(vk_left) && !keyboard_check(vk_up)) {
+    } else if (downKey) {
         
         // Abajo
     
@@ -142,19 +159,15 @@ if (pasos == 0 && puedeMoverse && !inmovilizado && !meditando) {
         !place_meeting(x, y + 32, obj_npc_basic) && 
         !bloqueo
         ) {
-    
-            if (keyboard_check(vk_down)) {
-                yInicio = y;
-                // frame = 0;
-                alarm[0] = 1;
-                y += spd;
-                if (!muerto) {
-                    reproducirSonido(sndPaso, false, false);
-                }
-                pasos = 1;
-                ultimaTecla = 0;
-            } 
-        
+            yInicio = y;
+            // frame = 0;
+            alarm[0] = 1;
+            y += spd;
+            if (!muerto) {
+                reproducirSonido(sndPaso, false, false);
+            }
+            pasos = 1;
+            ultimaTecla = 0;
         }
     
     }
@@ -222,16 +235,7 @@ switch (ultimaTecla) {
         break;         
 }
 
-if (
-(keyboard_check(vk_up) && keyboard_check(vk_down)) ||
-(keyboard_check(vk_left) && keyboard_check(vk_right)) ||
-(keyboard_check(vk_up) && keyboard_check(vk_right)) ||
-(keyboard_check(vk_up) && keyboard_check(vk_left)) ||
-(keyboard_check(vk_down) && keyboard_check(vk_right)) ||
-(keyboard_check(vk_down) && keyboard_check(vk_left))
-) {
-    puedeMoverse = false;
-}
+// puedeMoverse = false;
 
 // Opacidad techos
 
@@ -281,7 +285,7 @@ if (!meditando) {
         
         if (instance_exists(obj_persona) && !obj_persona.muerto) {
             if (
-            (obj_persona.x >= __view_get( e__VW.XView, 0 ) && (obj_persona.x <= __view_get( e__VW.XView, 0 ) + __view_get( e__VW.WView, 0 ))) &&
+            (obj_persona.x >= __view_get( e__VW.XView, 0 )&& (obj_persona.x <= __view_get( e__VW.XView, 0 )+ __view_get( e__VW.WView, 0 ))) &&
             (obj_persona.y >= __view_get( e__VW.YView, 0 ) && (obj_persona.y <= __view_get( e__VW.YView, 0 ) + __view_get( e__VW.HView, 0 )))
             ) {
                 xMeditando = x;
@@ -328,7 +332,7 @@ if (trabajando) {
         entra = true;
     }
 
-	var estaEnMovimiento = !puedeMoverse || obj_flecha_abajo.apretada || obj_flecha_arriba.apretada || obj_flecha_izq.apretada || obj_flecha_der.apretada;
+	var estaEnMovimiento = !puedeMoverse;
 
     if (estaEnMovimiento || entra) {
             
@@ -377,7 +381,7 @@ device_mouse_check_button(4, mb_left)
             // Ataque con arco / hechizo
 
             if (
-            (device_mouse_x(device) >= __view_get( e__VW.XView, 0 ) && device_mouse_x(device) <= __view_get( e__VW.XView, 0 ) + __view_get( e__VW.WView, 0 )) &&
+            (device_mouse_x(device) >= __view_get( e__VW.XView, 0 )&& device_mouse_x(device) <= __view_get( e__VW.XView, 0 )+ __view_get( e__VW.WView, 0 )) &&
             (device_mouse_y(device) >= __view_get( e__VW.YView, 0 ) && device_mouse_y(device) <= __view_get( e__VW.YView, 0 ) + __view_get( e__VW.HView, 0 ))
             ) {
                 obj_hechizos.moviendoHechizo = false;
@@ -386,7 +390,7 @@ device_mouse_check_button(4, mb_left)
             if (
             !atacaConArco && 
             !atacaConHechizo &&
-            (device_mouse_x(device) >= __view_get( e__VW.XView, 0 ) && device_mouse_x(device) <= __view_get( e__VW.XView, 0 ) + 56) &&
+            (device_mouse_x(device) >= __view_get( e__VW.XView, 0 )&& device_mouse_x(device) <= __view_get( e__VW.XView, 0 )+ 56) &&
             (device_mouse_y(device) >= __view_get( e__VW.YView, 0 ) && device_mouse_y(device) <= __view_get( e__VW.YView, 0 ) + 32)
             ) {
             
@@ -403,7 +407,7 @@ device_mouse_check_button(4, mb_left)
                     if (
                     atacaConArco && 
                     !meditando &&
-                    (device_mouse_x(device) >= __view_get( e__VW.XView, 0 ) && device_mouse_x(device) <= __view_get( e__VW.XView, 0 ) + __view_get( e__VW.WView, 0 )) &&
+                    (device_mouse_x(device) >= __view_get( e__VW.XView, 0 )&& device_mouse_x(device) <= __view_get( e__VW.XView, 0 )+ __view_get( e__VW.WView, 0 )) &&
                     (device_mouse_y(device) >= __view_get( e__VW.YView, 0 ) && device_mouse_y(device) <= __view_get( e__VW.YView, 0 ) + __view_get( e__VW.HView, 0 ))
                     ) {
             
@@ -766,7 +770,7 @@ device_mouse_check_button(4, mb_left)
                     puedeAtacar &&
                     atacaConHechizo && 
                     !meditando &&
-                    (device_mouse_x(device) >= __view_get( e__VW.XView, 0 ) && device_mouse_x(device) <= __view_get( e__VW.XView, 0 ) + __view_get( e__VW.WView, 0 )) &&
+                    (device_mouse_x(device) >= __view_get( e__VW.XView, 0 )&& device_mouse_x(device) <= __view_get( e__VW.XView, 0 )+ __view_get( e__VW.WView, 0 )) &&
                     (device_mouse_y(device)  >= __view_get( e__VW.YView, 0 ) && device_mouse_y(device)  <= __view_get( e__VW.YView, 0 ) + __view_get( e__VW.HView, 0 ))
                     ) {
                     
@@ -1444,7 +1448,7 @@ device_mouse_check_button(4, mb_left)
                                             
                                             } else if (obj_hechizos.tipoHechizos[i] == "invocacion") {
                                                 
-                                                if (obj_pj.puedeMoverse && !obj_flecha_abajo.apretada && !obj_flecha_arriba.apretada && !obj_flecha_izq.apretada && !obj_flecha_der.apretada) {
+                                                if (obj_pj.puedeMoverse) {
                                                     if (obj_hechizos.indiceHechizos[i] == 19) {
                                                     
                                                         // Invocar mascotas
@@ -1626,7 +1630,7 @@ device_mouse_check_button(4, mb_left)
                             }
                         
                         } else if (
-                        (puedeMoverse && !obj_flecha_abajo.apretada && !obj_flecha_arriba.apretada && !obj_flecha_izq.apretada && !obj_flecha_der.apretada) &&
+                        (puedeMoverse) &&
                         (trabajoActual == 155 || trabajoActual == 156) &&
                         tile_layer_find(10000000, device_mouse_x(device), device_mouse_y(device) ) == -1
                         ) {
