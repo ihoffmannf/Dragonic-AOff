@@ -1,7 +1,13 @@
 {
-  "kind": 1,
+  "resourceType": "GMPath",
+  "resourceVersion": "1.0",
+  "name": "path_peces",
   "closed": true,
-  "precision": 4,
+  "kind": 1,
+  "parent": {
+    "name": "Paths",
+    "path": "folders/Paths.yy",
+  },
   "points": [
     {"speed":100.0,"x":256.0,"y":224.0,},
     {"speed":100.0,"x":384.0,"y":192.0,},
@@ -21,12 +27,5 @@
     {"speed":100.0,"x":368.0,"y":208.0,},
     {"speed":100.0,"x":304.0,"y":240.0,},
   ],
-  "parent": {
-    "name": "Paths",
-    "path": "folders/Paths.yy",
-  },
-  "resourceVersion": "1.0",
-  "name": "path_peces",
-  "tags": [],
-  "resourceType": "GMPath",
+  "precision": 4,
 }

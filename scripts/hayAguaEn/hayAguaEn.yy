@@ -1,12 +1,11 @@
 {
-  "isDnD": false,
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "hayAguaEn",
   "isCompatibility": false,
+  "isDnD": false,
   "parent": {
     "name": "Scripts",
     "path": "folders/Scripts.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "hayAguaEn",
-  "tags": [],
-  "resourceType": "GMScript",
 }

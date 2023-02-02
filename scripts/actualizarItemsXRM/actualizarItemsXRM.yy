@@ -1,12 +1,11 @@
 {
-  "isDnD": false,
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "actualizarItemsXRM",
   "isCompatibility": false,
+  "isDnD": false,
   "parent": {
     "name": "Scripts",
     "path": "folders/Scripts.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "actualizarItemsXRM",
-  "tags": [],
-  "resourceType": "GMScript",
 }
