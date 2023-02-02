@@ -519,8 +519,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "gui",
+    "path": "texturegroups/gui",
   },
   "type": 0,
   "VTile": false,

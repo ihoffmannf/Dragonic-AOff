@@ -182,8 +182,8 @@
   ],
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "bodys",
+    "path": "texturegroups/bodys",
   },
   "type": 0,
   "VTile": false,

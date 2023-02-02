@@ -21,8 +21,8 @@
   },
   "spriteNoExport": false,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "sinusar",
+    "path": "texturegroups/sinusar",
   },
   "tile_count": 8,
   "tileAnimation": {

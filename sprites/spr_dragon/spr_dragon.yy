@@ -159,8 +159,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "dragon",
+    "path": "texturegroups/dragon",
   },
   "type": 0,
   "VTile": false,

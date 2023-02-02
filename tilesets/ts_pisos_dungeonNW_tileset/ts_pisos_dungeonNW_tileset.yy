@@ -21,8 +21,8 @@
   },
   "spriteNoExport": false,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "dungeons",
+    "path": "texturegroups/dungeons",
   },
   "tile_count": 20,
   "tileAnimation": {

@@ -258,8 +258,8 @@
   "size": 7.0,
   "styleName": "Bold",
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "gui",
+    "path": "texturegroups/gui",
   },
   "TTFName": "",
 }
