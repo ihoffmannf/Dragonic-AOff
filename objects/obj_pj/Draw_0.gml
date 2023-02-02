@@ -593,7 +593,7 @@ if (esLegion) {
 // Palabras mágicas
 
 if (dicePalabrasMagicas) {
-    draw_set_font(fnt_Vedrana_7_bold);
+    //draw_set_font(fnt_Vedrana_7_bold);
     draw_set_halign(fa_center);
     draw_set_color(c_black);
     draw_text(x + 1, y - 66, string_hash_to_newline(palabrasMagicas));

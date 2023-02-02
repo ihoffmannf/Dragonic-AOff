@@ -258,8 +258,8 @@
   "size": 8.0,
   "styleName": "Bold",
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "bodys",
+    "path": "texturegroups/bodys",
   },
   "TTFName": "",
 }

@@ -2,10 +2,7 @@
 
 if (visible) {
     
-    draw_set_color(c_black);
-    draw_set_alpha(0.5);
-    draw_rectangle(__view_get( e__VW.XView, 1 ) + 120, __view_get( e__VW.YView, 1 ) + 8, __view_get( e__VW.XView, 1 ) + 439, __view_get( e__VW.YView, 1 ) + 71, false);
-    draw_set_alpha(1);
+	draw_sprite(spr_inventario_back,0,__view_get( e__VW.XView, 1 ) + 120,__view_get( e__VW.YView, 1 ) + 8)
     
     draw_set_font(fnt_Vedrana_7_bold);
     draw_set_color(c_white);
