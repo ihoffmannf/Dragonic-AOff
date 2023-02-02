@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Dragonic AOff",
-    "path": "Dragonic AOff.yyp",
+    "name": "Scripts",
+    "path": "folders/Scripts.yy",
   },
 }

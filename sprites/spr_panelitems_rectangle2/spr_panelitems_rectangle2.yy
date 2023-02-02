@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Dragonic AOff",
-    "path": "Dragonic AOff.yyp",
+    "name": "Inventario y Hechizos",
+    "path": "folders/Sprites/Inventario y Hechizos.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
