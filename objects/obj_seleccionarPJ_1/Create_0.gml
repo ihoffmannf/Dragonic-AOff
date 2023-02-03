@@ -3,8 +3,5 @@
 elegible = true;
 dibujarErrorElegible = false;
 image_alpha = 0;
-
-if (!obj_control_notificacion_torneos.PJsAptosParaTorneo[0]) {
-    elegible = false;
-}
-
+alarm[1] = 1;
+numPj = 1;
