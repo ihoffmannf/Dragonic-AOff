@@ -9,7 +9,7 @@ if (
 !position_meeting(device_mouse_x(3), device_mouse_y(3), self) && 
 !position_meeting(device_mouse_x(4), device_mouse_y(4), self)
 ) {
-    keyboard_key_release(vk_control);
+    keyboard_key_release(obj_pj.mapAtacar);
     teclaApretada = false;
     image_index = 0;
 } else if (
@@ -27,7 +27,7 @@ device_mouse_check_button(4, mb_left)
             obj_control_devices.devicesL[device] = true;
             if (!obj_pj.muerto) {
                 teclaApretada = true;
-                keyboard_key_press(vk_control);
+                pjAtacar()
                 image_index = 1;
             } else {
                 var idINFO = instance_create(obj_pj.x, obj_pj.y, obj_INFO);
