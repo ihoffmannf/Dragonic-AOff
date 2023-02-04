@@ -290,6 +290,7 @@
     {"name":"obj_cabezaPJ","order":2,"path":"objects/obj_cabezaPJ/obj_cabezaPJ.yy",},
     {"name":"input_player_get_invalid_gamepad_bindings","order":7,"path":"scripts/input_player_get_invalid_gamepad_bindings/input_player_get_invalid_gamepad_bindings.yy",},
     {"name":"spr_cuerpo_negro_m","order":7,"path":"sprites/spr_cuerpo_negro_m/spr_cuerpo_negro_m.yy",},
+    {"name":"agarrar","order":16,"path":"scripts/agarrar/agarrar.yy",},
     {"name":"spr_cuerpo_bajo_h","order":8,"path":"sprites/spr_cuerpo_bajo_h/spr_cuerpo_bajo_h.yy",},
     {"name":"spr_cuerpo_bajo_m","order":9,"path":"sprites/spr_cuerpo_bajo_m/spr_cuerpo_bajo_m.yy",},
     {"name":"input_mouse_capture_set","order":1,"path":"scripts/input_mouse_capture_set/input_mouse_capture_set.yy",},

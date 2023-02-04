@@ -346,6 +346,7 @@
     {"id":{"name":"obj_cabezaPJ","path":"objects/obj_cabezaPJ/obj_cabezaPJ.yy",},"order":2,},
     {"id":{"name":"input_player_get_invalid_gamepad_bindings","path":"scripts/input_player_get_invalid_gamepad_bindings/input_player_get_invalid_gamepad_bindings.yy",},"order":0,},
     {"id":{"name":"spr_cuerpo_negro_m","path":"sprites/spr_cuerpo_negro_m/spr_cuerpo_negro_m.yy",},"order":7,},
+    {"id":{"name":"agarrar","path":"scripts/agarrar/agarrar.yy",},"order":0,},
     {"id":{"name":"spr_cuerpo_bajo_h","path":"sprites/spr_cuerpo_bajo_h/spr_cuerpo_bajo_h.yy",},"order":8,},
     {"id":{"name":"spr_cuerpo_bajo_m","path":"sprites/spr_cuerpo_bajo_m/spr_cuerpo_bajo_m.yy",},"order":9,},
     {"id":{"name":"input_mouse_capture_set","path":"scripts/input_mouse_capture_set/input_mouse_capture_set.yy",},"order":0,},

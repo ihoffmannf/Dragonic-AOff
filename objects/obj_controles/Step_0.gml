@@ -1,29 +1,33 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-obj_pj.upKey = keyboard_check(mapArriba) || obj_flecha_arriba.apretada
-obj_pj.downKey = keyboard_check(mapAbajo) || obj_flecha_abajo.apretada
-obj_pj.leftKey = keyboard_check(mapIzquierda) || obj_flecha_izq.apretada
-obj_pj.rightKey = keyboard_check(mapDerecha) || obj_flecha_der.apretada
+obj_pj.upKey = input_check("up") || obj_flecha_arriba.apretada
+obj_pj.downKey = input_check("down") || obj_flecha_abajo.apretada
+obj_pj.leftKey = input_check("left") || obj_flecha_izq.apretada
+obj_pj.rightKey = input_check("right") || obj_flecha_der.apretada
 
 if (obj_pj.muerto) exit;
 
-if (keyboard_check_pressed(mapTirar)){
+if (input_check_pressed("tirar")){
 	tirarItem()
 }
 
-if (keyboard_check_pressed(mapAtacar)){
+if (input_check_pressed("atacar")){
 	pjAtacar();
 }
 
-if (keyboard_check_pressed(mapUsar)){
+if (input_check_pressed("usar")){
 	usarItem();
 }
 
-if (keyboard_check_pressed(mapMeditar)){
+if (input_check_pressed("meditar")){
 	meditar();
 }
 
-if (keyboard_check_pressed(mapLanzar)){
+if (input_check_pressed("agarrar")){
+	agarrar();
+}
+
+if (input_check_pressed("lanzar")){
 	lanzar();
 }

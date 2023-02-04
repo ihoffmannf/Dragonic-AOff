@@ -13,18 +13,17 @@ INPUT_DEFAULT_PROFILES = {
     
     keyboard_and_mouse:
     {
-        up:    [input_binding_key(vk_up),    input_binding_key("W")],
-        down:  [input_binding_key(vk_down),  input_binding_key("S")],
-        left:  [input_binding_key(vk_left),  input_binding_key("A")],
-        right: [input_binding_key(vk_right), input_binding_key("D")],
+        up:    input_binding_key(vk_up),
+        down:  input_binding_key(vk_down),
+        left:  input_binding_key(vk_left),
+        right: input_binding_key(vk_right),
         
-        accept:  input_binding_key(vk_space),
-        cancel:  input_binding_key(vk_backspace),
-        action:  input_binding_key(vk_enter),
-        special: input_binding_key(vk_shift),
-        
-        //No aiming verbs since we use the mouse for that (see below for aiming verb examples)
-        shoot: input_binding_mouse_button(mb_left),
+        agarrar:  input_binding_key(ord("A")),
+        usar:  input_binding_key(ord("U")),
+        atacar:  input_binding_key(vk_control),
+        meditar: input_binding_key(vk_f6),
+        tirar: input_binding_key(ord("T")),
+		lanzar: input_binding_key(ord("L")),
         
         pause: input_binding_key(vk_escape),
     },
@@ -36,16 +35,16 @@ INPUT_DEFAULT_PROFILES = {
         left:  [input_binding_gamepad_axis(gp_axislh, true),  input_binding_gamepad_button(gp_padl)],
         right: [input_binding_gamepad_axis(gp_axislh, false), input_binding_gamepad_button(gp_padr)],
         
-        accept:  input_binding_gamepad_button(gp_face1),
-        cancel:  input_binding_gamepad_button(gp_face2),
-        action:  input_binding_gamepad_button(gp_face3),
-        special: input_binding_gamepad_button(gp_face4),
+        agarrar:  input_binding_gamepad_button(gp_face1),
+        usar:  input_binding_gamepad_button(gp_face2),
+        atacar:  input_binding_gamepad_button(gp_face3),
+        meditar: input_binding_gamepad_button(gp_face4),
         
         aim_up:    input_binding_gamepad_axis(gp_axisrv, true),
         aim_down:  input_binding_gamepad_axis(gp_axisrv, false),
         aim_left:  input_binding_gamepad_axis(gp_axisrh, true),
         aim_right: input_binding_gamepad_axis(gp_axisrh, false),
-        shoot:     [input_binding_gamepad_button(gp_shoulderlb), input_binding_gamepad_button(gp_shoulderrb)],
+        lanzar:     [input_binding_gamepad_button(gp_shoulderlb), input_binding_gamepad_button(gp_shoulderrb)],
         
         pause: input_binding_gamepad_button(gp_start),
     },
