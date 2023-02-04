@@ -235,7 +235,7 @@ if (!domado) {
             if (targetNPC.salud > 0) {
                 expOtorgada = floor(targetNPC.experiencia / (targetNPC.salud / dano));
             }
-                                   
+                                
             if (targetNPC.experiencia - expOtorgada <= 0) {
                 expOtorgada = targetNPC.experiencia;
                 targetNPC.experiencia = 0;
@@ -424,4 +424,3 @@ if (!domado && target != -1 && personaRoom != -1 && instance_exists(personaRoom)
     }
 
 }
-

@@ -14,6 +14,8 @@ yInicio = y;
 spd = 2;
 envenena = false;
 target = -1;
+objHechizo = obj_dardo_magico;
+sndHechizo = snd_dardoMagico;
 
 // Persona
 

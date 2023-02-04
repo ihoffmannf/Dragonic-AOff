@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_npc_basic",
+  "name": "obj_npc_basic_hechicero",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":2,"eventType":2,"isDnD":false,},
@@ -12,7 +12,10 @@
     "name": "NPCs",
     "path": "folders/Objects/NPCs.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_npc_basic",
+    "path": "objects/obj_npc_basic/obj_npc_basic.yy",
+  },
   "persistent": true,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,

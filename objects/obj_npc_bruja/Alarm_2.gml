@@ -1,5 +1,5 @@
 /// @description  Ataque a PJ
-
+                    
 if (obj_pj.invisible) {
     
     // Si es invisible

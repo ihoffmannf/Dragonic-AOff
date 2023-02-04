@@ -249,7 +249,7 @@ if (target == -1 || target == obj_pj) {
                 }
                 
                 if (valido) {
-                    var idHechizo = instance_create(obj_pj.x, obj_pj.y, obj_misil_magico);
+                    var idHechizo = instance_create(obj_pj.x, obj_pj.y, objHechizo);
                     idHechizo.padre = obj_pj.id;
                     
                     var dano = floor(random_range(danoHechizoMin, danoHechizoMax));
@@ -269,7 +269,7 @@ if (target == -1 || target == obj_pj) {
                         }
                     }
                         
-                    reproducirSonido(snd_misilMagico, false, false);
+                    reproducirSonido(sndHechizo, false, false);
                     vibrarPantalla();
                     
                     if (obj_pj.salud - danoTotal >= 1) {                    
@@ -365,7 +365,7 @@ if (target != -1 && target != obj_pj && personaRoom != -1 && instance_exists(per
                 }
                 
                 if (valido) {
-                    var idHechizo = instance_create(personaRoom.x, personaRoom.y, obj_misil_magico);
+                    var idHechizo = instance_create(personaRoom.x, personaRoom.y, objHechizo);
                     idHechizo.padre = personaRoom.id;
                     
                     var dano = floor(random_range(danoHechizoMin, danoHechizoMax));
@@ -374,7 +374,7 @@ if (target != -1 && target != obj_pj && personaRoom != -1 && instance_exists(per
                     idDano.dano = danoTotal;
                     idDano.padre = personaRoom.id;
                     
-                    reproducirSonido(snd_misilMagico, false, false);
+                    reproducirSonido(sndHechizo, false, false);
                     personaRoom.salud -= danoTotal;
                 }
                 

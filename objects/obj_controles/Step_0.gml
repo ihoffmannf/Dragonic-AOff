@@ -25,6 +25,8 @@ if (input_check_pressed("meditar")){
 }
 
 if (input_check_pressed("agarrar")){
+	//input_vibrate_pulse(1.0,0.5,1,30)
+	//input_vibrate_pulse(1.0,0.5,1,30)
 	agarrar();
 }
 

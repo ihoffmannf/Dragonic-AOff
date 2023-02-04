@@ -14,6 +14,8 @@ yInicio = y;
 spd = 2;
 envenena = false;
 target = -1;
+objHechizo = obj_tormenta_de_fuego;
+sndHechizo = snd_tormentaDeFuego;
 
 // Persona
 
