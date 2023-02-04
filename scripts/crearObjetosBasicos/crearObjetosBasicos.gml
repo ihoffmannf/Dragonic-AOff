@@ -497,7 +497,7 @@ function crearObjetosBasicos(argument0) {
 	    instance_create(0, 0, obj_gui);
 	    instance_create(85, 2455, obj_cambiar_vista_hechizos);
 	    instance_create(85, 2455, obj_mover_inventario);
-	    instance_create(0, 0, obj_control);
+	    instance_create(0, 0, obj_controles);
 	    instance_create(0, 0, obj_ayuda);
 	    instance_create(0, 0, obj_configuracion);
 	    instance_create(0, 0, obj_panel_opciones);
