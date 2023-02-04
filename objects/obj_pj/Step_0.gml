@@ -11,28 +11,6 @@
 */
 var bloqueo = false;
 
-upKey = keyboard_check(mapArriba) || obj_flecha_arriba.apretada
-downKey = keyboard_check(mapAbajo) || obj_flecha_abajo.apretada
-leftKey = keyboard_check(mapIzquierda) || obj_flecha_izq.apretada
-rightKey = keyboard_check(mapDerecha) || obj_flecha_der.apretada
-
-if (keyboard_check_pressed(mapAgarrar) && (!muerto)){
-	tirarItem()
-}
-
-if (keyboard_check_pressed(mapAtacar)){
-	pjAtacar();
-}
-
-if (keyboard_check_pressed(mapUsar)){
-	usarItem();
-}
-
-if (keyboard_check_pressed(mapMeditar)){
-	meditar();
-}
-
-
 // transparencia en arboles
 var _inst = noone
 if (obj_opciones.opcionArboles) _inst = instance_place(x, y, obj_arbol_basic);

@@ -14,15 +14,6 @@ downKey = false;
 leftKey = false;
 rightKey = false;
 
-mapAgarrar = ord("A")
-mapAtacar = vk_control
-mapUsar = ord("U")
-mapArriba = vk_up;
-mapAbajo = vk_down;
-mapIzquierda = vk_left;
-mapDerecha = vk_right;
-mapMeditar = vk_f6;
-
 if (instance_exists(obj_nombrePJ)) {
     nombre = obj_nombrePJ.nombre;
     with (obj_nombrePJ) {

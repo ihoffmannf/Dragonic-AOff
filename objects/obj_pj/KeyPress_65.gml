@@ -111,8 +111,7 @@ if (!muerto) {
     }
 
 }
-    
-keyboard_key_release(ord("A"));
+
 obj_tecla_A.alarm[0] = 2;
 
 

@@ -11,7 +11,7 @@ if (
 !position_meeting(device_mouse_x(3), device_mouse_y(3), self) && 
 !position_meeting(device_mouse_x(4), device_mouse_y(4), self)
 ) {
-    keyboard_key_release(obj_pj.mapMeditar);
+    keyboard_key_release(obj_controles.mapMeditar);
 } else if (
 device_mouse_check_button(0, mb_left) ||
 device_mouse_check_button(1, mb_left) ||

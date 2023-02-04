@@ -9,7 +9,7 @@ if (
 !position_meeting(device_mouse_x(3), device_mouse_y(3), self) && 
 !position_meeting(device_mouse_x(4), device_mouse_y(4), self)
 ) {
-    keyboard_key_release(obj_pj.mapAtacar);
+    keyboard_key_release(obj_controles.mapAtacar);
     teclaApretada = false;
     image_index = 0;
 } else if (

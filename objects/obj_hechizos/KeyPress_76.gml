@@ -14,6 +14,4 @@ if (seleccionado != -1) {
     
 }
 
-keyboard_key_release(ord("L"));
 obj_tecla_lanzar.alarm[0] = 2;
-
